@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_char.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 18:40:21 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/17 19:35:16 by ajeffers         ###   ########.fr       */
+/*   Created: 2025/10/17 19:33:29 by ajeffers          #+#    #+#             */
+/*   Updated: 2025/10/17 19:34:24 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <stdarg.h>
-# include <stdbool.h>
-# include <stdlib.h>
-# include <unistd.h>
-
-int	ft_print_char(int c);
-int	ft_print_nbr(int n);
-int	ft_print_percent(void);
-int	ft_print_hex(int n, bool uppercase);
-int	ft_print_ptr(void *ptr);
-
-
-#endif
+int	ft_print_char(int c)
+{
+	return (write(1, &c, 1));
+}
