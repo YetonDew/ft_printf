@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printnbr.c                                      :+:      :+:    :+:   */
+/*   ft_print_nbr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:58:28 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/17 18:38:49 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/20 19:24:03 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
-#include "libft/libft.h"
 
 int	ft_print_nbr (int n)
 {
@@ -20,7 +19,7 @@ int	ft_print_nbr (int n)
 
 	len = 0;
 	num = ft_itoa(n);
-	len = ft_printstr(num);
+	len = ft_print_str(num);
 	free(num);
 	return (len);
 }

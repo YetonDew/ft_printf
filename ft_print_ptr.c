@@ -6,11 +6,10 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:06:21 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/17 18:56:38 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/20 19:20:08 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "printf.h"
 
 static int	print_lower(unsigned long long int n)
