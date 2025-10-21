@@ -6,7 +6,7 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:40:21 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/21 13:12:44 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:36:12 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_printf(char *, ...);
+int		ft_printf(char *str, ...);
 int		ft_print_char(int c);
 int		ft_print_nbr(int n);
 int		ft_print_percent(void);
