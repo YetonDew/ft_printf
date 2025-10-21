@@ -6,12 +6,11 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:35:45 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/21 14:23:04 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:30:31 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 static void	printer_conversion(char *str, va_list args, int *counter)
 {
