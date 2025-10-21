@@ -6,13 +6,13 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:58:28 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/20 19:24:03 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:01:51 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int	ft_print_nbr (int n)
+int	ft_print_nbr(int n)
 {
 	int		len;
 	char	*num;

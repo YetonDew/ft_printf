@@ -6,11 +6,10 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:16:23 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/17 19:37:08 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 13:17:29 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
 #include "ft_printf.h"
 
 int	print_lower(int n)
@@ -22,7 +21,7 @@ int	print_lower(int n)
 	count = 0;
 	if (n >= 16)
 		count += print_lower(n / 16);
-	count += ft_print_char(&base[n % 16]);
+	count += ft_print_char(base[n % 16]);
 	return (count);
 }
 
@@ -39,7 +38,7 @@ int	ft_print_hex(int n, bool uppercase)
 		base = "0123456789ABCDEF";
 		if (n >= 16)
 			count += ft_print_hex(n / 16, uppercase);
-		count += ft_print_char(&base[n % 16]);
+		count += ft_print_char(base[n % 16]);
 	}
 	return (count);
 }

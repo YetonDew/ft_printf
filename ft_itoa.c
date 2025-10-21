@@ -6,11 +6,11 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 17:00:32 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/10 14:35:55 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 13:11:20 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	number_size(long n)
 {

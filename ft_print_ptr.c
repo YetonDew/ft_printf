@@ -6,11 +6,11 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:06:21 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/20 19:20:08 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 14:23:26 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static int	print_lower(unsigned long long int n)
 {
@@ -28,9 +28,14 @@ static int	print_lower(unsigned long long int n)
 
 int	ft_print_ptr(void *ptr)
 {
-	int	count;
-	unsigned long long int value;
+	int						count;
+	unsigned long long int	value;
 
+	if (ptr == NULL)
+	{
+		write(1, "(nil)", 5);
+		return (5);
+	}
 	value = (unsigned long long int)ptr;
 	write(1, "0x", 2);
 	count = 2;

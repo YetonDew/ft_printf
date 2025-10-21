@@ -6,12 +6,11 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:14:14 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/17 17:16:03 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 13:21:26 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft/libft.h"
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_print_percent(void)
 {
