@@ -6,13 +6,13 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:16:23 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/21 13:17:29 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:59:35 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_lower(int n)
+int	print_lower(unsigned int n)
 {
 	char	*base;
 	int		count;
@@ -25,7 +25,7 @@ int	print_lower(int n)
 	return (count);
 }
 
-int	ft_print_hex(int n, bool uppercase)
+int	ft_print_hex(unsigned int n, bool uppercase)
 {
 	char	*base;
 	int		count;

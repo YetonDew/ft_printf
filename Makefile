@@ -6,12 +6,12 @@
 #    By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/20 19:14:21 by ajeffers          #+#    #+#              #
-#    Updated: 2025/10/21 14:26:10 by ajeffers         ###   ########.fr        #
+#    Updated: 2025/10/21 19:00:23 by ajeffers         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -fr
 

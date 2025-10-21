@@ -6,7 +6,7 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 18:40:21 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/21 14:36:12 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:56:03 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_printf(char *str, ...);
+int		ft_printf(const char *str, ...);
 int		ft_print_char(int c);
 int		ft_print_nbr(int n);
 int		ft_print_percent(void);
-int		ft_print_hex(int n, bool uppercase);
+int		ft_print_hex(unsigned int n, bool uppercase);
 int		ft_print_ptr(void *ptr);
 int		ft_print_unsig(const unsigned int n);
 int		ft_print_str(char *str);

@@ -6,7 +6,7 @@
 /*   By: ajeffers <ajeffers@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 16:35:45 by ajeffers          #+#    #+#             */
-/*   Updated: 2025/10/21 14:30:31 by ajeffers         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:49:39 by ajeffers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,14 +65,14 @@ static void	print_or_find(char *str, va_list args, int *counter)
 	}
 }
 
-int	ft_printf(char *str, ...)
+int	ft_printf(const char *str, ...)
 {
 	va_list	args;
 	int		counter;
 
 	counter = 0;
-	va_start(args, str);
-	print_or_find(str, args, &counter);
+	va_start(args, (char *)str);
+	print_or_find((char *)str, args, &counter);
 	va_end(args);
 	return (counter);
 }
